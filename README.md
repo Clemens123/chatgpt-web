@@ -1,5 +1,5 @@
 # ChatGPT-web
-(this is a fork from https://github.com/Niek/chatgpt-web)
+(This is a fork from https://github.com/Niek/chatgpt-web)
 
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Niek/chatgpt-web/pages.yml?style=flat-square)](https://github.com/Niek/chatgpt-web/actions/workflows/pages.yml)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](https://standardjs.com)
