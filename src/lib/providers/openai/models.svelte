@@ -102,7 +102,14 @@
     completion: 0.0000004, // $0.40 per 1M output tokens
     max: 1047576
   }
-    const gpt5 = {
+  const gpt5 = {
+    ...chatModelBase,
+    prompt: 0.00000125, // $1.25 per 1M input tokens
+    cachedPrompt: 0.0000005, // $0.125 per 1M cached input tokens
+    completion: 0.00001, // $10.00 per 1M output tokens
+    max: 1047576
+  }
+  const gpt5chat = {
     ...chatModelBase,
     prompt: 0.00000125, // $1.25 per 1M input tokens
     cachedPrompt: 0.0000005, // $0.125 per 1M cached input tokens
@@ -169,6 +176,7 @@
     'gpt-4.1-mini': { ...gpt41mini },
     'gpt-4.1-nano': { ...gpt41nano },
     'gpt-5': { ...gpt5 },
+    'gpt-5-chat': { ...gpt5chat },
     'gpt-5-mini': { ...gpt5mini },
     'gpt-5-nano': { ...gpt5nano },
     'gpt-4o': { ...gpt4o },
