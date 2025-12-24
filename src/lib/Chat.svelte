@@ -305,7 +305,7 @@
       .slice(0, 10) // limit to first 10 user messages
     suggestMessages.push(suggestMessage)
   
-    // Use gpt-4.1-nano for the name suggestion, override model only for this request
+    // Use gpt-5-nano for the name suggestion, override model only for this request
     const response = await chatRequest.sendRequest(
       suggestMessages,
       {
@@ -314,7 +314,7 @@
         streaming: false,
         summaryRequest: true
       },
-      { model: 'gpt-4.1-nano', store: false, stream: false },
+      { model: 'gpt-5-nano', store: false, stream: false },
       true // noMergeSettings: only use the explicit settings provided
     )
 
